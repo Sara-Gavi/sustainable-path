@@ -21,7 +21,9 @@ function EnergyPath() {
             alt="Camino Sostenible"
           />
           <p className="content__slogan">
-            ¿Quieres conocer el camino de la energía verde?
+            {index === -1
+              ? "¿Quieres conocer el camino de la energía?"
+              : phrases[index]}
           </p>
           <div className="content__button">
             <button
