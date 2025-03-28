@@ -3,7 +3,7 @@ import logoApp from "../images/logo_app.png";
 
 function EnergyPath() {
   const [phrases, setPhrases] = useState([]);
-  const [index, setIndex] = useState(0);
+  const [index, setIndex] = useState(-1); //Muestro la primera pregunta
 
   useEffect(() => {
     fetch("/frases.json")
@@ -24,7 +24,18 @@ function EnergyPath() {
             ¿Quieres conocer el camino de la energía verde?
           </p>
           <div className="content__button">
-            <button className="button__cta">Descubre más</button>
+            <button
+              className="button__cta"
+              onClick={() => {
+                if (index < phrases.length - 1) {
+                  setIndex(index + 1);
+                } else {
+                  setIndex(-1); // Reinicia a la frase inicial
+                }
+              }}
+            >
+              Descubre más
+            </button>
           </div>
         </section>
       </header>
