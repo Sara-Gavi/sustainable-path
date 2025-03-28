@@ -20,7 +20,7 @@ function EnergyPath() {
             src={logoApp}
             alt="Camino Sostenible"
           />
-          <p className="content__slogan">
+          <p className={`content__slogan ${index !== -1 ? "json-phrase" : ""}`}>
             {index === -1
               ? "¿Quieres conocer el camino de la energía?"
               : phrases[index]}
