@@ -1,6 +1,16 @@
+import { useState, useEffect } from "react";
 import logoApp from "../images/logo_app.png";
 
 function EnergyPath() {
+  const [phrases, setPhrases] = useState([]);
+  const [index, setIndex] = useState(0);
+
+  useEffect(() => {
+    fetch("/frases.json")
+      .then((res) => res.json())
+      .then((data) => setPhrases(data));
+  }, []);
+
   return (
     <div>
       <header className="hero">
