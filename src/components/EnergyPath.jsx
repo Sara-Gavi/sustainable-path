@@ -4,6 +4,7 @@ import logoApp from "../images/logo_app.png";
 
 function EnergyPath() {
   const [steps, setSteps] = useState([]);
+  const [visibleSteps, setVisibleSteps] = useState(1); //Aparece solo un primer paso al iniciar
 
   useEffect(() => {
     fetch("/frases.json")
@@ -28,6 +29,12 @@ function EnergyPath() {
           </div>
         </div>
       ))}
+      <button
+        className="continue__button"
+        onClick={() => setVisibleSteps(visibleSteps + 1)}
+      >
+        Sigue caminando
+      </button>
       <div className="step__logo-link">
         <Link to="/">
           <img src={logoApp} alt="Volver a inicio" className="logo__image" />
