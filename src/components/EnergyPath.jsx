@@ -48,6 +48,16 @@ function EnergyPath() {
               className="step__image"
             />
             <p className="step__text">{step.text}</p>
+            {index === steps.length - 1 && (
+              <a
+                href=""
+                className="join__button"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                ¿Te sumas?
+              </a>
+            )}
           </div>
         </div>
       ))}

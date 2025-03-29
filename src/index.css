@@ -211,3 +211,24 @@
 .logo__image:hover {
   transform: scale(1.1);
 }
+
+.join__button {
+  display: inline-block;
+  margin-top: 1.5rem;
+  padding: 0.6rem 1.4rem;
+  border: 2px solid #ff48d8;
+  background-color: #180048;
+  color: #ff48d8;
+  font-size: 1.6rem;
+  font-weight: 600;
+  font-family: "Fredoka", sans-serif;
+  text-decoration: none;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+}
+
+.join__button:hover {
+  background-color: #ff48d8;
+  color: #180048;
+  border: 2px solid #180048;
+}
