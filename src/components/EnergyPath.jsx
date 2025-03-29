@@ -1,4 +1,6 @@
 import { useEffect, useState } from "react";
+import { Link } from "react-router-dom";
+import logoApp from "../images/logo_app.png";
 
 function EnergyPath() {
   const [steps, setSteps] = useState([]);
@@ -26,6 +28,11 @@ function EnergyPath() {
           </div>
         </div>
       ))}
+      <div className="step__logo-link">
+        <Link to="/">
+          <img src={logoApp} alt="Volver a inicio" className="logo__image" />
+        </Link>
+      </div>
     </div>
   );
 }

@@ -192,3 +192,22 @@
   font-size: 1.6rem;
   line-height: 1.5;
 }
+
+.step__logo-link {
+  display: flex;
+  justify-content: center;
+  margin-top: 4rem;
+  margin-bottom: 6rem;
+}
+
+.logo__image {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.logo__image:hover {
+  transform: scale(1.1);
+}
