@@ -12,6 +12,10 @@ function EnergyPath() {
       .then((data) => setSteps(data));
   }, []);
 
+  const handleNextStep = () => {
+    setVisibleSteps(visibleSteps + 1);
+  };
+
   return (
     <div className="energy__container">
       {steps.slice(0, visibleSteps).map((step, index) => (
@@ -29,12 +33,13 @@ function EnergyPath() {
           </div>
         </div>
       ))}
-      <button
-        className="continue__button"
-        onClick={() => setVisibleSteps(visibleSteps + 1)}
-      >
-        Sigue caminando
-      </button>
+      {visibleSteps < steps.length && (
+        <div className="step__button">
+          <button className="button__cta" onClick={handleNextStep}>
+            Sigue caminando
+          </button>
+        </div>
+      )}
       <div className="step__logo-link">
         <Link to="/">
           <img src={logoApp} alt="Volver a inicio" className="logo__image" />
