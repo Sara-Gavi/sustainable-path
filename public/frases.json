@@ -28,9 +28,7 @@
     "image": "/images/empatia.jpg"
   },
   {
-    "text": "Descubre quiénes están transformando el mundo. ¿Te sumas?",
-    "image": "/images/tierra.jpg",
-    "linkText": "¿Te sumas?",
-    "linkUrl": "https://octopusenergy.es/"
+    "text": "Descubre quiénes están transformando el mundo.",
+    "image": "/images/tierra.jpg"
   }
 ]
