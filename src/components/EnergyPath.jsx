@@ -14,7 +14,7 @@ function EnergyPath() {
 
   return (
     <div className="energy__container">
-      {steps.map((step, index) => (
+      {steps.slice(0, visibleSteps).map((step, index) => (
         <div className="path__step" key={index}>
           <div className="step__line">
             <span className="step__dot"></span>
