@@ -1,25 +1,32 @@
+import { useEffect, useState } from "react";
+
 function EnergyPath() {
+  const [steps, setSteps] = useState([]);
+
+  useEffect(() => {
+    fetch("/frases.json")
+      .then((res) => res.json())
+      .then((data) => setSteps(data));
+  }, []);
+
   return (
     <div className="energy__container">
-      <div className="path__step">
-        <div className="step__line">
-          <span className="step__dot"></span>
+      {steps.map((step, index) => (
+        <div className="path__step" key={index}>
+          <div className="step__line">
+            <span className="step__dot"></span>
+          </div>
+          <div className="step__content">
+            <img
+              src={step.image}
+              alt="Imagen del paso"
+              className="step__image"
+            />
+            <p className="step__text">{step.text}</p>
+          </div>
         </div>
-        <div className="step__content">
-          <img
-            src="/images/arboles.jpg"
-            alt="Naturaleza conectada"
-            className="step__image"
-          />
-          <p className="step__text">
-            Los árboles se comunican entre sí a través de sus raíces,
-            compartiendo nutrientes e información. La naturaleza lleva miles de
-            años trabajando en red.
-          </p>
-        </div>
-      </div>
+      ))}
     </div>
   );
 }
-
 export default EnergyPath;
