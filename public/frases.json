@@ -1,10 +1,36 @@
 [
-  "Los árboles se comunican entre sí a través de sus raíces, compartiendo nutrientes e información. La naturaleza lleva miles de años trabajando en red.",
-  "Todo en la naturaleza está conectado, como un gran sistema vivo en equilibrio.",
-  "La energía del sol viaja millones de kilómetros para alimentar la vida en la Tierra.",
-  "Gracias a la tecnología, podemos convertir esa energía en electricidad limpia.",
-  "La energía verde no solo ilumina hogares, también cuida del planeta.",
-  "La sostenibilidad no es una moda, es un compromiso con las próximas generaciones.",
-  "Es transformar el modelo energético desde la empatía y la innovación.",
-  "¿Quieres formar parte del cambio? Conoce Octopus Energy: https://octopusenergy.es/"
+  {
+    "text": "Los árboles se comunican entre sí a través de sus raíces, compartiendo nutrientes e información. La naturaleza lleva miles de años trabajando en red.",
+    "image": "/images/arboles.jpg"
+  },
+  {
+    "text": "Todo en la naturaleza está conectado, como un gran sistema vivo en equilibrio.",
+    "image": "/images/conexion.jpg"
+  },
+  {
+    "text": "La energía del sol viaja millones de kilómetros para alimentar la vida en la Tierra.",
+    "image": "/images/sol.jpg"
+  },
+  {
+    "text": "Gracias a la tecnología, podemos convertir esa energía en electricidad limpia.",
+    "image": "/images/solar.jpg"
+  },
+  {
+    "text": "La energía verde no solo ilumina hogares, también cuida del planeta.",
+    "image": "/images/hogar.jpg"
+  },
+  {
+    "text": "La sostenibilidad no es una moda, es un compromiso con las próximas generaciones.",
+    "image": "/images/generaciones.jpg"
+  },
+  {
+    "text": "Es transformar el modelo energético desde la empatía y la innovación.",
+    "image": "/images/empatia.jpg"
+  },
+  {
+    "text": "Descubre quiénes están transformando el mundo. ¿Te sumas?",
+    "image": "/images/tierra.jpg",
+    "linkText": "¿Te sumas?",
+    "linkUrl": "https://octopusenergy.es/"
+  }
 ]
